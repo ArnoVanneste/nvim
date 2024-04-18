@@ -1,4 +1,4 @@
 # Neovim Configuration
 
 ## Dependencies
-Add dependencies
+TODO: Add dependencies
