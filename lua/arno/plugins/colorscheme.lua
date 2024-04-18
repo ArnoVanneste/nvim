@@ -6,6 +6,6 @@ return {
 	priority = 1000,	-- make sure to load this before all the other start plugins
 	init = function()
 	  colorscheme = catppuccin
-	  vim.cmd.colorscheme("catppuccin-mocha")
+	  vim.cmd.colorscheme("catppuccin")
 	end,
 }
