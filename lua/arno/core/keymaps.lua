@@ -14,7 +14,7 @@ keymap.set("n", "Esc", "<cmd>nohlsearch<CR>")
 keymap.set("n", "<leader>wv", "<C-w>v", { desc = "[W]indow split [V]ertically" })
 keymap.set("n", "<leader>wh", "<C-w>s", { desc = "[W]indow split [H]orizontally" })
 keymap.set("n", "<leader>we", "<C-w>=", { desc = "[W]indow split [E]qual size" })
-keymap.set("n", "<leader>wx", "<cmd>close<CR>", { desc = "[W]indow close current" })
+keymap.set("n", "<leader>wd", "<cmd>close<CR>", { desc = "[W]indow [D]elete current" })
 -- moving between windows --
 keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })
 keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right window" })
