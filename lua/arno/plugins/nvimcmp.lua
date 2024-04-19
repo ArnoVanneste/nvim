@@ -51,5 +51,8 @@ return {
         }),
       },
     })
+
+    -- disable completion for markdown files --
+    vim.cmd[[ autocmd FileType markdown lua require('cmp').setup.buffer { enabled = false } ]]
   end,
 }
