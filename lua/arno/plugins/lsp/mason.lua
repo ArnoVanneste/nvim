@@ -4,13 +4,13 @@ return {
     "williamboman/mason-lspconfig.nvim",
   },
   config = function()
-    -- import mason
+    -- import mason --
     local mason = require("mason")
 
-    -- import mason-lspconfig
+    -- import mason-lspconfig --
     local mason_lspconfig = require("mason-lspconfig")
 
-    -- enable mason and configure icons
+    -- enable mason and configure icons --
     mason.setup({
       ui = {
         icons = {
