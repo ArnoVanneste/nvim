@@ -1,5 +1,8 @@
 vim.cmd("let g:netrw_liststyle = 3")
 
+-- HACK: makes sure trailing whitespaces do not get removed in MarCon --
+vim.g.editorconfig = false
+
 vim.g.have_nerd_font = true
 
 local opt = vim.opt
