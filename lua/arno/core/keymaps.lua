@@ -5,7 +5,7 @@ vim.g.maplocalleader = " "
 local keymap = vim.keymap
 
 -- clear search highlights --
-keymap.set("n", "Esc", "<cmd>nohlsearch<CR>")
+keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 -- window management --
 keymap.set("n", "<leader>wv", "<C-w>v", { desc = "[W]indow split [V]ertically" })
