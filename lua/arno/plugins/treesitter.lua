@@ -14,13 +14,9 @@ return {
       -- auto installs new languages
       auto_install = true,
       -- enable syntax highlighting
-      highlight = {
-        enable = true,
-      },
+      highlight = { enable = true, },
       -- enable autotagging (w/ nvim-ts-autotag plugin)
-      autotag = {
-        enable = true,
-      },
+      autotag = { enable = true, },
     })
   end,
 }
