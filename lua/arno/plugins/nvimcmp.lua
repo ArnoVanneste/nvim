@@ -6,9 +6,9 @@ return {
     "hrsh7th/cmp-path", -- source for file system paths
     {
       "L3MON4D3/LuaSnip",
-      -- follow latest release.
+      -- follow latest release --
       version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
-      -- install jsregexp (optional!).
+      -- install jsregexp (optional!) --
       build = "make install_jsregexp",
     },
     "saadparwaiz1/cmp_luasnip", -- for autocompletion
@@ -20,7 +20,7 @@ return {
     local luasnip = require("luasnip")
     local lspkind = require("lspkind")
 
-    -- loads vscode style snippets from installed plugins (e.g. friendly-snippets)
+    -- loads vscode style snippets from installed plugins (e.g. friendly-snippets) --
     require("luasnip.loaders.from_vscode").lazy_load()
 
     cmp.setup({
@@ -33,9 +33,9 @@ return {
         end,
       },
       mapping = cmp.mapping.preset.insert({
-        ["<C-y>"] = cmp.mapping.confirm({ select = true }), -- Accept ([y]es) the completion.
+        ["<C-y>"] = cmp.mapping.confirm({ select = true }), -- Accept ([y]es) the completion
       }),
-      -- sources for autocompletion
+      -- sources for autocompletion --
       sources = cmp.config.sources({
         { name = "nvim_lsp" }, -- lsp
         { name = "luasnip" }, -- snippets
@@ -43,7 +43,7 @@ return {
         { name = "path" }, -- file system paths
       }),
 
-      -- configure lspkind for vs-code like pictograms in completion menu
+      -- configure lspkind for vs-code like pictograms in completion menu --
       formatting = {
         format = lspkind.cmp_format({
           maxwidth = 50,
