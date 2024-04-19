@@ -33,19 +33,7 @@ return {
         end,
       },
       mapping = cmp.mapping.preset.insert({
-        ["<C-p>"] = cmp.mapping.select_prev_item(), -- previous suggestion
-        ["<C-n>"] = cmp.mapping.select_next_item(), -- next suggestion
-        ["<C-y>"] = cmp.mapping.confirm({ select = true }), -- next suggestion
-        ["<C-l>"] = cmp.mapping(function()	-- will move you to the right of each of the expansion locations
-          if luasnip.expand_or_locally_jumpable() then
-            luasnip.expand_or_jump()
-          end
-        end, { "i", "s" }),
-        ["<C-h>"] = cmp.mapping(function()	-- will move you to the left of each of the expansion locations
-          if luasnip.locally_jumpable(-1) then
-            luasnip.jump(-1)
-          end
-        end, { "i", "s" }),
+        ["<C-y>"] = cmp.mapping.confirm({ select = true }), -- Accept ([y]es) the completion.
       }),
       -- sources for autocompletion
       sources = cmp.config.sources({
