@@ -15,6 +15,7 @@ return {
       ["<leader>r"] = { name = "[R]e-name/start", _ = "which_key_ignore" },
       ["<leader>t"] = { name = "[T]oggle", _ = "which_key_ignore" },
       ["<leader>q"] = { name = "[Q]uit", _ = "which_key_ignore" },
+      ["<leader>g"] = { name = "[G]oto", _ = "which_key_ignore" },
     })
   end,
   opts = {}
