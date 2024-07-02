@@ -24,6 +24,7 @@ return {
       dashboard.button("SPC ff", "󰱼 > Find File", "<cmd>Telescope find_files<CR>"),
       dashboard.button("SPC fg", "  > Find by Grep", "<cmd>Telescope live_grep<CR>"),
       dashboard.button("q", " > Quit NVIM", "<cmd>qa<CR>"),
+      dashboard.button("st", "󰊄 > Speed Typer", "<cmd>Speedtyper<CR>"),
     }
 
     -- send config to alpha --
