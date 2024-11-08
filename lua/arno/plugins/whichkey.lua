@@ -7,15 +7,15 @@ return {
 
     -- document existing key chains --
     local wk = require("which-key")
-    wk.register({
-      ["<leader>w"] = { name = "[W]indow", _ = "which_key_ignore" },
-      ["<leader>b"] = { name = "[B]uffer", _ = "which_key_ignore" },
-      ["<leader>c"] = { name = "[C]ode", _ = "which_key_ignore" },
-      ["<leader>f"] = { name = "[F]ind", _ = "which_key_ignore" },
-      ["<leader>r"] = { name = "[R]e-name/start", _ = "which_key_ignore" },
-      ["<leader>t"] = { name = "[T]oggle", _ = "which_key_ignore" },
-      ["<leader>q"] = { name = "[Q]uit", _ = "which_key_ignore" },
-      ["<leader>g"] = { name = "[G]oto", _ = "which_key_ignore" },
+    wk.add({
+      { "<leader>w" , group = "[W]indow" },
+      { "<leader>b" , group = "[B]uffer" },
+      { "<leader>c" , group = "[C]ode" },
+      { "<leader>f" , group = "[F]ind" },
+      { "<leader>r" , group = "[R]e-name/start" },
+      { "<leader>t" , group = "[T]oggle" },
+      { "<leader>q" , group = "[Q]uit" },
+      { "<leader>g" , group = "[G]oto" }
     })
   end,
   opts = {}
